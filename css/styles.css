@@ -319,7 +319,7 @@ input[type=radio].cd{display: none;}
   height: 40px; width: 100px;
   border-radius: 7px;
   background: black; opacity: 0.3;
-  color: white; font-family: "Courier New";
+  color: white; font-family: "Times New Roman"; font-style: italic;
   text-align:center;
 }
 .final_btn span{display: inline-block; margin-top: 5px; font-size: 20px;}
