@@ -2,9 +2,11 @@ body {
   background: linear-gradient(rgb(225,230,235),rgb(245,255,255));
   font-family: "Times New Roman", "YuMincho";
   margin: 0;
-  height: 100vh;
+  min-height: 100vh; min-height: -webkit-fill-available;
   overflow-x: hidden;
 }
+html{height: -webkit-fill-available;}
+
 div.container{
   position: absolute;
   top: 50%; left: 50%;
@@ -45,7 +47,7 @@ table tr th:nth-child(1){width: 270px;}
   border-spacing: 5px;
 }
 table tr th{
-  height: 13px; background-color: red;
+  height: 13px; background-color: orangered;
   border: 1px solid darkred; font-style: italic;
 }
 table td{
