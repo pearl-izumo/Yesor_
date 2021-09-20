@@ -7,7 +7,7 @@ body {
 
 div.container{
   width: 100%; height: 600px;
-  margin-top: 20px;
+  margin-top: 5%;
   overflow-x: hidden;
 }
 
@@ -235,9 +235,9 @@ a.btn>span{
   transform: rotate(8deg); font-style: normal;
   width: 108px; height: 60px;
 }
-#guess{margin-left: 10px; font-size: 22px; font-family: "Meiryo"; color: black;}
+#guess{margin-left: 10px; font-size: 22px; font-family: "Courier New"; color: black;}
 #one{
-  position: absolute; top: 24px; left: 36px; font-family: "Meiryo";
+  position: absolute; top: 24px; left: 36px; font-family: "Courier New";
   color: black; font-size: 22px;
 }
 
@@ -319,7 +319,7 @@ input[type=radio].cd{display: none;}
   height: 40px; width: 100px;
   border-radius: 7px;
   background: black; opacity: 0.3;
-  color: white; font-family: "Meiryo";
+  color: white; font-family: "Courier New";
   text-align:center;
 }
 .final_btn span{display: inline-block; margin-top: 5px; font-size: 20px;}
