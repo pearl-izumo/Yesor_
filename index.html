@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+    <title>Yes or ...？</title>
+    <link rel="icon" href="img/pearl.png">
+    <link rel="stylesheet" href="css/styles.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+</head>
+<body>
+  <div class="container">
+    <div class="title" id="title">
+      <img src="img/title.png" width="140"></img>
+    </div>
+  
+    <div class="center">
+
+      <div class="start" id="start">
+        <div class="opening">
+          <p>10回きりの質問と</p><p>あなたの知識で</p><p>TWICEの楽曲を言い当てよ</p>
+        </div>
+        <div class="mode" id="normal_mode">Normal ☞</div>
+        <div class="mode_exp">10回の返答は全て真実・解答権1回</div>
+        <div class="mode" id="hard_mode">Hard ☞</div>
+        <div class="mode_exp">10回中1回だけ嘘の返答・解答権3回</div>
+        <div class="rule_exp">
+          <p>タイトルをタップすると</p><p>詳細なルール説明が見られます</p><p>（プレイ中も確認可能）</p>
+        </div>
+        <div class="twitter1" id="twitter1">
+          <p>Created by <a href="https://twitter.com/pearl_izumo" target="_blank">@pearl_izumo</a></p>
+        </div>
+      </div>
+
+      <div class="rule" id="rule">
+        <div class="balloon" id="balloon">
+          <div class="rulebox" id="rulebox">
+            <p>【質問方法】</p>
+            <p class="pp">Question Card から質問を1つ選択→ "Ask"</p>
+            <p>【解答方法】</p>
+            <p class="pp">10回の質問後 Music List から曲名が選択可能になります。曲名を1つ選択→ "Guess"</p>
+            <p>【仕様：Title】</p>
+            <p class="pp">○楽曲タイトルの表記は Music List を参照してください (全曲アルファベット表記)。</p>
+            <p class="pp">○タイトルの文字数には、記号を含めません。</p>
+            <p class="pp">○タイトルの単語数は「タイトルに含まれる半角スペースの個数+1」とします。</p>
+            <p class="pp">○例えば "Like OOH-AHH" は10文字/2単語 "MORE & MORE" は8文字/3単語です。</p>
+            <p>【仕様：Track】</p>
+            <p class="pp">○Summer Nights などの Special Album はその他リパケ系に分類されます。</p>
+            <p class="pp">○CDの収録曲数が奇数の場合、ちょうど真ん中の曲までをCDの前半とします。</p>
+            <p class="pp">○例えば Twicetagram (13曲収録) の "24/7" (7曲目) はCDの前半です。</p>
+            <p class="pp">○収録トラックはCDを参照し、場合によっては Music List に記載されていない曲も含むので注意してください。</p>
+            <p class="pp">○例えば BDZ のリスト上で "L.O.V.E" は上から2番目に記載されていますが、収録トラックは4番です。</p>
+            <p>【仕様：Etc.】</p>
+            <p class="pp">○CDの表題曲とは、基本的にCDの1曲目のことを指します。</p>
+              <p class="pp">○ただし、日本アルバムのリパッケージ曲である "STAY BY MY SIDE" と "SWING"、およびデジタルリリースの "CRY FOR ME" は表題曲に該当しません。</p><br>
+            <p class="pp">その他、質問やバグ報告等はTwitterまで！</p><br>
+          </div>
+          <div class="status" id="status"></div>
+          <div class="closer" id="closer">
+            <div class="close_btn" id="close_btn"></div>
+            <span>CLOSE</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="result" id="result">
+        <div class="result_word" id="result_word"></div>
+        <div class="ans_exp">The answer is...</div>
+        <img class="ans_img" id="ans_img"></img>
+        <div class="ans_title" id="ans_title"></div>
+        <div class="retry" id="retry">Retry ☞</div>
+        <div class="tweet" id="tweet">Tweet ☞</div>
+        <div class="twitter2" id="twitter2">
+          <p>Created by <a href="https://twitter.com/pearl_izumo" target="_blank">@pearl_izumo</a></p>
+        </div>
+      </div>
+
+      <div class="coins" id="coins">
+        <img class="coin" id="coin"></img>
+      </div> 
+
+      <div class="answer">
+        <table id="ansTable">
+          <tr>
+            <th>Q</th> <th>A</th>
+          </tr>
+        </table>
+        <div id="memo"></div>
+      </div>
+      <div class="question" id="question">
+        <div class="genre">
+          <h1>Question Cards</h1>
+          <hr class="line" width="170"></hr>
+        </div>
+        <a class="btn" id="btn_year"><span>Year</span></a>
+        <a class="btn" id="btn_title"><span>Title</span></a>
+        <a class="btn" id="btn_first"><span>First</span></a>
+        <a class="btn" id="btn_month"><span>Month</span></a>
+        <a class="btn" id="btn_track"><span>Track</span></a>
+        <a class="btn" id="btn_etc"><span>Etc.</span></a>
+        <div id="for_dsp">
+          <div class="Qcard">
+            <div class="exp1" id="exp1_1"></div>
+            <div class="exp1" id="exp1_2"></div>
+            <div class="space" id="space1"><div id="rd1"></div></div>
+            <div class="space" id="space2"><div id="rd2"></div></div>
+            <div class="space" id="space3"><div id="rd3"></div></div>
+            <div class="space" id="space4"><div id="rd4"></div></div>
+            <a class="btn2" id="back"><div id="arrow"></div></a>
+            <h1>Back</h1>
+            <a class="btn3" id="ask"><span>Ask!</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="musicdice" id="musicdice">
+        <img src="img/dice.png" height="40px" id="come1"></img>
+        <h1 id="come2">Music List</h1>
+      </div>
+    </div>
+    <div class="musiclist" id="musiclist">
+      <div class="menu"></div>
+      <div class="yearlist">
+        <div class="yl_title">
+          <h1>Music List</h1><h2>[134 songs]</h2>
+        </div>
+        <div class="twolists">
+          <div id="list1">
+            <ul class="marker">
+              <li id="y2015"><a>2015 </a><a id="songs">[6 songs]</a></li>
+              <li id="y2016"><a>2016 </a><a id="songs">[14 songs]</a></li>
+              <li id="y2017"><a>2017 </a><a id="songs">[25 songs]</a></li>
+              <li id="y2018"><a>2018 </a><a id="songs">[27 songs]</a></li>
+            </ul>
+          </div>
+          <div id="list2">
+            <ul class="marker">
+              <li id="y2019"><a>2019 </a><a id="songs">[22 songs]</a></li>
+              <li id="y2020"><a>2020 </a><a id="songs">[25 songs]</a></li>
+              <li id="y2021"><a>2021 </a><a id="songs">[15 songs]</a></li>
+            </ul>
+            <div id="challenge">
+              <a id="guess">Guess</a><br></br><a id="one">1/134 !</a>
+            </div>
+          </div>
+        </div>
+        <a class="btn2" id="back2"><div id="arrow"></div></a>
+        <h1 id="back_h1">Back</h1>
+      </div>
+    <div class="ribbon"></div>
+    <div class="titleview" id="titleview">
+      <div class="exp2" id="exp2_1">Music List 2015</div>
+      <div class="exp2" id="exp2_2">[6 songs]</div>
+      <div class="frame" id="frame">
+        <ul class="scroll" id="scroll"></ul>
+      </div>
+      <a class="btn2" id="back3"><div id="arrow"></div></a>
+      <h1>Back</h1>
+      <div class="flags" id="flags"></div>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>
