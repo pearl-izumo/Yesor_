@@ -2,10 +2,9 @@ body {
   background: linear-gradient(rgb(225,230,235),rgb(245,255,255));
   font-family: "Times New Roman", "YuMincho";
   margin: 0;
-  min-height: 100vh; min-height: -webkit-fill-available;
+  min-height: 100%;
   overflow-x: hidden;
 }
-html{height: -webkit-fill-available;}
 
 div.container{
   position: absolute;
