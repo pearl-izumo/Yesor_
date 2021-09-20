@@ -224,7 +224,7 @@ a.btn>span{
 .yearlist #songs{font-size: 14px;}
 .twolists{display: flex; font-size:18px;}
 .yearlist .btn2{background: orangered; margin: 38px 0 0 13px;}
-.yearlist>h1{color: white; font-size: 22px; margin: -24px 0 0 55px; font-style: italic;}
+.yearlist>h1{color: white; font-size: 22px; margin: -26px 0 0 55px; font-style: italic;}
 
 .marker li::before{
   content:"▶︎"; margin-right: 3px;
@@ -254,7 +254,7 @@ a.btn>span{
   width: 200px;
   font-size: 15px; font-weight: bold; font-style: italic;}
 .titleview .btn2{background: orangered; margin: 38px 0 0 -2px;}
-.titleview>h1{font-size: 22px; margin: 151px 0 0 40px; font-style: italic;}
+.titleview>h1{font-size: 22px; margin: 149px 0 0 40px; font-style: italic;}
 .flags{
   position: absolute; top: 180px; right: 5px;
   display: flex;
