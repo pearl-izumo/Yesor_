@@ -1,6 +1,6 @@
 body {
   background: linear-gradient(rgb(225,230,235),rgb(245,255,255));
-  font-family: cursive, "YuMincho";
+  font-family: "Comic Sans MS", "YuMincho";
   margin: 0;
   height: 100vh;
   overflow-x: hidden;
@@ -234,9 +234,9 @@ a.btn>span{
   transform: rotate(8deg);
   width: 108px; height: 60px;
 }
-#guess{margin-left: 10px; font-size: 22px; font-family: fantasy; color: black;}
+#guess{margin-left: 10px; font-size: 22px; font-family: "alba"; color: black;}
 #one{
-  position: absolute; top: 24px; left: 36px; font-family: fantasy;
+  position: absolute; top: 24px; left: 36px; font-family: "alba";
   color: black; font-size: 22px;
 }
 
@@ -318,7 +318,7 @@ input[type=radio].cd{display: none;}
   height: 40px; width: 100px;
   border-radius: 7px;
   background: black; opacity: 0.3;
-  color: white; font-family: fantasy;
+  color: white; font-family: "alba";
   text-align:center;
 }
 .final_btn span{display: inline-block; margin-top: 5px; font-size: 20px;}
