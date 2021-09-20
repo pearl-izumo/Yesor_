@@ -234,9 +234,9 @@ a.btn>span{
   transform: rotate(8deg);
   width: 108px; height: 60px;
 }
-#guess{margin-left: 10px; font-size: 22px; font-family: "alba"; color: black;}
+#guess{margin-left: 10px; font-size: 22px; font-family: "Impact"; color: black;}
 #one{
-  position: absolute; top: 24px; left: 36px; font-family: "alba";
+  position: absolute; top: 24px; left: 36px; font-family: "Impact";
   color: black; font-size: 22px;
 }
 
