@@ -322,7 +322,7 @@ input[type=radio].cd{display: none;}
   color: white; font-family: "Times New Roman"; font-style: italic;
   text-align:center;
 }
-.final_btn span{display: inline-block; margin-top: 5px; font-size: 20px;}
+.final_btn span{display: inline-block; margin-top: 5px; font-size: 21px;}
 
 .coins{
   position: absolute; top: 70px; left: 85px;
