@@ -253,7 +253,7 @@
         if(hard==0){dataText+='Normal';
         }else{dataText+='Hard';};
         dataText+='モードで "'+DATA[ans][1]+'" を言い当てた！'
-        window.open("https://twitter.com/share?text="+dataText+"&hashtags=yesor_"+"&url=https://google.com"); //リンク変更
+        window.open("https://twitter.com/share?text="+dataText+"&hashtags=yesor_"+"&url=https://pearl-izumo.github.io/Yesor_"); //リンク変更
       };
     });
 
